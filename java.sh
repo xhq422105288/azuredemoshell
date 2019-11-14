@@ -9,7 +9,7 @@ debian|ubuntu|devuan)
     apt install openjdk-8-jdk -y
     ;;
 centos|fedora|rhel)
-    yum install openjdk-8-jdk -y
+    yum install java-1.8.0-openjdk -y
     ;;
 *)
     exit 1
