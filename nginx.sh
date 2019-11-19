@@ -6,6 +6,7 @@
 source /etc/os-release
 case $ID in
 debian|ubuntu|devuan)
+    apt-get update
     apt install nginx -y && systemctl enable nginx && systemctl start nginx
     ;;
 centos|fedora|rhel)
